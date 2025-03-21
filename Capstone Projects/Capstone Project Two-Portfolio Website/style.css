@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    padding: 20px 60px 30px 60px;
+    background-color: #FBF8CC;
+    color: #03045E;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10%;
+    margin-top: 10px;
+}
+
+#header_person_name {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+#header_work_about_home {
+    display: flex;
+    gap: 40px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#header_icons {
+    display: flex;
+    gap: 20px;
+}
+
+#section2 {
+    display: flex;
+    width: 100%;
+    height: 80%;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.section2_card1 {
+    width: 50%;
+    height: 100%;
+    align-items: center;
+}
+
+.section2_card2 {
+    width: 50%;
+    height: 100%;
+    margin-left: 30%;
+}
+
+
+#greeting {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+#skill {
+    font-size: 100px;
+    font-weight: 800;
+}
+
+#was_barn_text {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+#resume_btn_container {
+    margin-top: 20px;
+    position: relative;
+    height: 68px;
+    width: 164px;
+}
+
+#resume_btn_bc {
+    position: absolute;
+    left: 6px;
+    top: 6px;
+    background-color: #F5EE84;
+    height: 61px;
+    width: 158px;
+    border-radius: 6px;
+}
+
+
+#resume_btn {
+    position: absolute;
+    z-index: 1;
+    border: 1px solid black;
+    background-color: #FBF8CC;
+    font-weight: 400;
+    align-content: center;
+    text-align: center;
+    border-radius: 6px;
+    font-size: 20px;
+    height: 61px;
+    width: 158px;
+}
+
+#section4 {
+    margin-top: 50px;
+}
+
+.about_work_title {
+    font-weight: 800;
+    font-size: 100px;
+    color: #F7F197;
+}
+
+.about_work_text {
+    width: 900px;
+    height: 132px;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+#about_lists {
+    margin-left: 10%;
+    margin-top: 5%;
+    font-size: 24px;
+}
+
+#about_lists li {
+    width: 900px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+#about_lists li span {
+    font-weight: 600;
+}
+
+#section5 {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.section5_card {
+    width: 40%;
+}
+
+#section5_card_date {
+    font-size: 15px;
+    font-style: italic;
+}
+
+#section5_card_studies_text {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+#section5_card_study_text {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#section7 {
+    font-size: 24px;
+    font-weight: 400;
+    display: flex;
+    gap: 50px;
+}
+
+#contact_text {
+    margin-bottom: 50px;
+}
+
+
+@media (max-width:1070px) {
+    #section2 {
+        flex-direction: column;
+    }
+
+    .section2_card1 {
+        justify-content: center;
+    }
+
+    #section5 {
+        flex-direction: column;
+    }
+
+    .section5_card {
+        margin-top: 50px;
+    }
+
+    .section2_card2 {
+        margin-left: 0;
+    }
+
+}
+
+@media (min-width:1400px) {
+    html {
+        width: 1600px;
+        height: 100vh;
+    }
+}
+@media (max-width:600px) {
+   .header{
+    flex-direction: column;
+   }
+   #header_work_about_home{
+    flex-direction: column;
+   }
+}
