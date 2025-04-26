@@ -1,0 +1,69 @@
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    color: #123458;
+    background-color: #F1EFEC;
+    justify-content: center;
+
+}
+
+p {
+    font-size: 3rem;
+    text-align: center;
+}
+
+#image_and_rates {
+    display: flex;
+    flex-direction: column;
+}
+
+#image_and_rates #book_img {
+    width: 120px;
+    height: 158px;
+}
+
+#stars {
+    display: flex;
+}
+
+#book_name_author_date_notes {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+
+}
+
+#book_name {
+    font-size: 40px;
+}
+
+#book_author {
+    font-size: 35px;
+}
+
+#book_date {
+    font-size: 30px;
+}
+
+#book_notes {
+    font-size: 30px;
+}
+
+#book_container {
+    display: flex;
+    margin: 10px auto;
+    align-content: flex-start;
+}
+
+.container {
+    margin: auto 20%;
+    padding-bottom: 20px;
+    background-color: rgb(130, 196, 216);
+}
+
+body>p {
+    margin-bottom: 100px;
+}
+
+footer {}

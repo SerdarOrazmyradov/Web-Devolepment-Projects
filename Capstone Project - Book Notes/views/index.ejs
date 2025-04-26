@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book notes</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <p>The books I read</p>
+    <% if(locals.items && locals.content){ %> <% items.forEach(element => {%>
+    <ul style="list-style-type: none">
+      <li>
+        <div class="container">
+          <div id="book_container">
+            <div id="image_and_rates">
+              <img src="<%=JSON.parse(content).source_url%>" alt="book img" id="book_img" />
+              <div id="stars">
+                <span>⭐</span>
+                <span>⭐</span>
+                <span>⭐</span>
+                <span>⭐</span>
+                <span>⭐</span>
+              </div>
+            </div>
+            <div id="book_name_author_date_notes">
+              <span id="book_name"><%= element.title %></span>
+              <span id="book_author"><%= element.author %></span>
+              <span id="book_date"
+                ><%= element.start_time.toDateString() %> - <%=
+                element.end_time.toDateString() %></span
+              >
+              <span id="book_notes"><%= element.notes %></span>
+              <div style="display: flex; justify-content: space-around">
+                <form action="/edit" method="GET">
+                  <input
+                    style="color: blue"
+                    id="book_edit"
+                    type="submit"
+                    name="edit"
+                    value="Edit"
+                  />
+                </form>
+                <form action="/delete" method="GET">
+                  <input
+                    style="color: red"
+                    id="book_delete"
+                    type="submit"
+                    name="delete"
+                    value="Delete"
+                  />
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+
+    <%}) %> <% } %>
+
+    <!-- <footer><p>© Serdar</p></footer> -->
+  </body>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"
+  ></script>
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "qrcode-generator",
+  "version": "1.0.0",
+  "description": "qr code ",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Serdar",
+  "license": "ISC",
+  "keywords": [],
+  "dependencies": {
+    "inquirer": "^12.5.0",
+    "qr-image": "^3.2.0"
+  }
+}

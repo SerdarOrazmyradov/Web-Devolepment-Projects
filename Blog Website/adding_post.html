@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adding Post</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <form id="form_adding_post" action="/submit" method="POST">
+      <div id="container_add_post_name">
+        <input
+          type="text"
+          name="add_post_body"
+          placeholder="Add Post name"
+          required
+        />
+      </div>
+      <div id="container_add_post_body">
+        <input
+          type="text"
+          name="add_post_body"
+          placeholder="Add Post body"
+          height="500"
+          required
+        />
+      </div>
+
+      <input id="submit_btn" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

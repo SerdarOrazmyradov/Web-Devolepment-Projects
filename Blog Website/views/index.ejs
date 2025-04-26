@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Website</title>
+    <link rel="stylesheet" href="/styles/styles.css" />
+  </head>
+  <body>
+    <div id="header">
+      <div id="add_post_btn">
+        <form action="/add_post" method="GET">
+          <input type="submit" value="Add Post" />
+        </form>
+        <!-- <span  id="add_post_text">Add Post</span> -->
+      </div>
+    </div>
+
+    <div id="container_posts">
+      <div id="posts_text">Posts</div>
+      <ul id="posts_items">
+      <% postName.forEach((element) => {%>
+        <li>
+          <div class="post_constructor">
+            <form action="/read" method="GET">
+              <input type="submit" value="<%= element %>" />
+            </form>
+            <form action="/delete" method="POST">
+              <input type="image" src="./images/delete.png" alt="delete" />
+            </form>
+            <form action="/edit" method="GET">
+              <input type="image" src="./images/edit.png" alt="edit" />
+            </form>
+          </div>
+
+          <!-- <img src="./images/edit.png" alt="edit" /> -->
+        </li>
+        <%}); %>
+      </ul>
+    </div>
+  </body>
+</html>
